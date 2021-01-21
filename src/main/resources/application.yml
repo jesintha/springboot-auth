@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  security:
+    oauth2:
+      client:
+        clientid: backyard
+        clientsecret: password
+      resourceserver:
+        jwt:
+          keystore:
+            file: backyardkeystore.jks
+            pairName: backyardpair
+            password: backyard
+
